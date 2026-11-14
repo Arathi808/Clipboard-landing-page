@@ -1,74 +1,81 @@
 body{
-   padding:0;
+   padding: 0;
    margin: 0;
-   overflow:hidden ;
+   /* overflow: hidden; */
 }
 
 .mainnav{
-  position:relative;
+  position: relative;
+  width: 100%;
 }
+
 .navbar{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    
+    width: 100%;
 }
+.navbar img:first-child {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 .logo{
-position: relative;
-bottom: 234px;
+    position: relative;
+    bottom: 234px;
+    /* margin-top: -60px; Adjust this so it overlaps the header naturally */
+    /* margin-bottom: 40px; */
 }
-.heading{
+
+/* Updated from .hero to .hero-content to match your container */
+.hero-content{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-content: center;
     align-items: center;
-    position:relative;
-    bottom: 95px;
+    position: relative;
+    margin-bottom: 90px;
 }
-.heading h1{
+
+.hero-content h1{
     color: hsl(210, 10%, 33%);
     align-items: center;
     font-size: 48px;
+    margin-bottom: 20px;
 }
-.heading p{
-    color:hsl(201, 11%, 66%);
-    line-height: 1;
-    align-items: center;
-    position: relative;
-    bottom:120px;
-    text-align: center;
+
+.hero-content p{
+    color: hsl(201, 11%, 66%);
+    line-height: 1.5; 
+    bottom: 120px;
     font-size: 18px;
     margin: 0;
     padding: 0;
-    margin-top: 8px
+    max-width: 600px; /* Constrains text width so it wraps naturally */
 }
+
 .buttons{
-    display:flex;
+    display: flex;
     flex-direction: row;
-    position: relative;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    bottom:165px;
-    gap:20px;
+    /* margin-top: 5px; */
+    gap: 20px;
     border-radius: 50%;
-    border: none;
-    color: white;
 }
-.blue-btn:hover{
-    opacity: 0.8;
-}
-.green-btn:hover{
+
+/* Generic button hover & shared styling */
+.btn:hover {
     opacity: 0.8;
 }
 
-.blue-btn{
+/* iOS Button (Teal/Cyan) */
+.btn-ios{
     background-color: hsl(171, 66%, 44%);
     border-radius: 50px;
     border-style: none;
-    padding: 14px 20px 14px;
+    padding: 14px 20px;
     color: white;
     font-size: 17px;
     cursor: pointer;
@@ -77,11 +84,16 @@ bottom: 234px;
     text-decoration: none;
 }
 
-.green-btn{
-    background-color:hsl(233, 100%, 69%) ;
+.btn-ios:hover{
+    opacity: 0.8;
+}
+
+/* Mac Button (Light Purple/Blue) */
+.btn-mac{
+    background-color: hsl(233, 100%, 69%);
     border-radius: 50px;
     border-style: none;
-    padding: 14px 20px 14px;
+    padding: 14px 20px;
     color: white;
     font-size: 17px;
     cursor: pointer;
@@ -89,3 +101,17 @@ bottom: 234px;
     text-align: center;
     text-decoration: none;
 }
+
+.btn-mac:hover{
+    opacity: 0.8;
+}
+.snippets{
+    color: hsl(210, 10%, 33%);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 90px;
+}
+.snippets h
