@@ -127,11 +127,14 @@ body{
     flex-direction: row;
     margin: 0 auto;
     padding:0 20;
+    margin-left: -80px;
+    width: calc(100% + 80px);
 }
 
 .computer-img img{
     width: 100%;
     margin: 0;
+    max-width: none;
 }
 .hero-content2{
     display: flex;
@@ -332,4 +335,39 @@ color: hsl(210, 10%, 33%);
     opacity: 0.8;
 }
 
+.footer{
+    background-color: hsl(200, 22%, 92%); /* Light gray footer background */
+    width: 100%;
+    margin-top: 100px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-between;
+    padding: 40px 110px;
+}
+.clipboardlogo img{
+    width:50%;
+}
+.contact, .privacy, .guide{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    text-align: left;
+}
+.contact p, .privacy p, .guide p{
+    color:hsl(210, 10%, 33%);
+    font-size: 16px;
+    margin: 0;
+    cursor: pointer ;
+}
+.icons{
+  display: flex;
+  gap:25px;
+  align-items: center;
+}
 
+.icons img {
+  cursor: pointer;
+}
