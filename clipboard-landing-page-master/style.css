@@ -29,7 +29,6 @@ body{
     flex-direction: column;
     align-content: center;
     align-items: center;
-    /* position: relative; */
     margin-bottom: 40px;
 }
 
@@ -239,3 +238,98 @@ color: hsl(210, 10%, 33%);
     gap:80px;
     margin-top: 90px;
 }
+.clipboard{
+    
+ display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.clipboard h3{
+    color: hsl(210, 10%, 33%);
+    align-items: center;
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    margin-top: 120px;
+}
+
+.clipboard p{
+    color: hsl(201, 11%, 66%);
+    line-height: 1.5; 
+    bottom: 120px;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    max-width: 630px; /* Constrains text width so it wraps naturally */
+    text-align: center;
+}
+.buttons .btn-ios{
+    background-color: hsl(171, 66%, 44%);
+    border-radius: 50px;
+    border-style: none;
+    padding: 14px 20px;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button .btn-ios:hover{
+    opacity: 0.8;
+}
+
+/* Mac Button (Light Purple/Blue) */
+.button .btn-mac{
+    background-color: hsl(233, 100%, 69%);
+    border-radius: 50px;
+    border-style: none;
+    padding: 14px 20px;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-ios{
+    background-color: hsl(171, 66%, 44%);
+    border-radius: 50px;
+    border-style: none;
+    padding: 14px 20px;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-ios:hover{
+    opacity: 0.8;
+}
+
+/* Mac Button (Light Purple/Blue) */
+.btn-mac{
+    background-color: hsl(233, 100%, 69%);
+    border-radius: 50px;
+    border-style: none;
+    padding: 14px 20px;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-mac:hover{
+    opacity: 0.8;
+}
+
+
